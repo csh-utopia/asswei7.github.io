@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://asswei7.github.io/"/>
-  <updated>2020-03-31T09:51:48.109Z</updated>
+  <updated>2020-03-31T10:02:35.524Z</updated>
   <id>https://asswei7.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://asswei7.github.io/2020/03/30/test/"/>
     <id>https://asswei7.github.io/2020/03/30/test/</id>
     <published>2020-03-30T07:29:35.000Z</published>
-    <updated>2020-03-31T09:51:48.109Z</updated>
+    <updated>2020-03-31T10:02:35.524Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="李永乐老师讲傅里叶"><a href="#李永乐老师讲傅里叶" class="headerlink" title="李永乐老师讲傅里叶"></a>李永乐老师讲傅里叶</h1><h2 id="变换"><a href="#变换" class="headerlink" title="变换"></a>变换</h2><p>一个二维图像可以变成二维坐标</p><script type="math/tex; mode=display">e_i \cdot e_i = 1</script><script type="math/tex; mode=display">e_i \cdot e_j = 0</script><h2 id="傅里叶级数"><a href="#傅里叶级数" class="headerlink" title="傅里叶级数"></a>傅里叶级数</h2><p>周期性函数f(t)=正(余)弦 函数之和<br>把不同的函数当成不同的基函数<br>获得不同的信号的 <em>频率</em>、<em>振幅</em>、<em>相位</em></p><script type="math/tex; mode=display">f(t) = \frac{a_0}{2}+\sum a_n\sin(n\omega t+\varphi_n)</script><h1 id=""><a href="#" class="headerlink" title="#"></a>#</h1><h1 id="Generalization-and-frequency-perspective"><a href="#Generalization-and-frequency-perspective" class="headerlink" title="Generalization and frequency perspective"></a>Generalization and frequency perspective</h1><h2 id="Fourier-analysis"><a href="#Fourier-analysis" class="headerlink" title="Fourier analysis"></a>Fourier analysis</h2><p>痴迷于热学，认为热包治百病。<br>夏天穿衣服，坐火炉，被热死。</p><h2 id="Fourier-series"><a href="#Fourier-series" class="headerlink" title="Fourier series"></a>Fourier series</h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="李永乐老师讲傅里叶"><a href="#李永乐老师讲傅里叶" class="headerlink" title="李永乐老师讲傅里叶"></a>李永乐老师讲傅里叶</h1><h2 id="变换"><a href="#变换" class="headerlink" title="变换"></a>变换</h2><p>一个二维图像可以变成二维坐标</p><script type="math/tex; mode=display">e_i \cdot e_i = 1</script><script type="math/tex; mode=display">e_i \cdot e_j = 0</script><h2 id="傅里叶级数（周期性函数）"><a href="#傅里叶级数（周期性函数）" class="headerlink" title="傅里叶级数（周期性函数）"></a>傅里叶级数（周期性函数）</h2><p>周期性函数f(t)=正(余)弦 函数之和<br>把不同的函数当成不同的基函数<br>获得不同的信号的 <em>频率</em>、<em>振幅</em>、<em>相位</em></p><script type="math/tex; mode=display">f(t) = \frac{a_0}{2}+\sum a_n\sin(n\omega t+\varphi_n)</script><script type="math/tex; mode=display">f(t) = \frac{a_0}{2}+\sum a_n\sin(n\omega t) +\sum b_n\cos(n\omega t)</script><p>将正弦看作一个正交基，余弦看作一个正交基，常数项看作一个正交基，是三个正交基的线性组合。</p><h2 id="傅里叶变换（针对非周期函数）"><a href="#傅里叶变换（针对非周期函数）" class="headerlink" title="傅里叶变换（针对非周期函数）"></a>傅里叶变换（针对非周期函数）</h2><p>想象一个二维 直角坐标系，横轴是1，纵轴是i</p><script type="math/tex; mode=display">\cos\theta+i\sin\theta=e^{i\theta}</script><p>$\theta = \omega t$<br>$e^{i \omega t}$为逆时针旋转</p><h1 id="Generalization-and-frequency-perspective"><a href="#Generalization-and-frequency-perspective" class="headerlink" title="Generalization and frequency perspective"></a>Generalization and frequency perspective</h1><h2 id="Fourier-analysis"><a href="#Fourier-analysis" class="headerlink" title="Fourier analysis"></a>Fourier analysis</h2><p>痴迷于热学，认为热包治百病。<br>夏天穿衣服，坐火炉，被热死。</p><h2 id="Fourier-series"><a href="#Fourier-series" class="headerlink" title="Fourier series"></a>Fourier series</h2>]]></content>
     
     <summary type="html">
     
