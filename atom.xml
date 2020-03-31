@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://asswei7.github.io/"/>
-  <updated>2020-03-31T10:02:35.524Z</updated>
+  <updated>2020-03-31T14:08:49.427Z</updated>
   <id>https://asswei7.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="https://asswei7.github.io/2020/03/30/test/"/>
-    <id>https://asswei7.github.io/2020/03/30/test/</id>
+    <title>傅里叶级数</title>
+    <link href="https://asswei7.github.io/2020/03/30/%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0/"/>
+    <id>https://asswei7.github.io/2020/03/30/%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0/</id>
     <published>2020-03-30T07:29:35.000Z</published>
-    <updated>2020-03-31T10:02:35.524Z</updated>
+    <updated>2020-03-31T14:08:49.427Z</updated>
     
     <content type="html"><![CDATA[<h1 id="李永乐老师讲傅里叶"><a href="#李永乐老师讲傅里叶" class="headerlink" title="李永乐老师讲傅里叶"></a>李永乐老师讲傅里叶</h1><h2 id="变换"><a href="#变换" class="headerlink" title="变换"></a>变换</h2><p>一个二维图像可以变成二维坐标</p><script type="math/tex; mode=display">e_i \cdot e_i = 1</script><script type="math/tex; mode=display">e_i \cdot e_j = 0</script><h2 id="傅里叶级数（周期性函数）"><a href="#傅里叶级数（周期性函数）" class="headerlink" title="傅里叶级数（周期性函数）"></a>傅里叶级数（周期性函数）</h2><p>周期性函数f(t)=正(余)弦 函数之和<br>把不同的函数当成不同的基函数<br>获得不同的信号的 <em>频率</em>、<em>振幅</em>、<em>相位</em></p><script type="math/tex; mode=display">f(t) = \frac{a_0}{2}+\sum a_n\sin(n\omega t+\varphi_n)</script><script type="math/tex; mode=display">f(t) = \frac{a_0}{2}+\sum a_n\sin(n\omega t) +\sum b_n\cos(n\omega t)</script><p>将正弦看作一个正交基，余弦看作一个正交基，常数项看作一个正交基，是三个正交基的线性组合。</p><h2 id="傅里叶变换（针对非周期函数）"><a href="#傅里叶变换（针对非周期函数）" class="headerlink" title="傅里叶变换（针对非周期函数）"></a>傅里叶变换（针对非周期函数）</h2><p>想象一个二维 直角坐标系，横轴是1，纵轴是i</p><script type="math/tex; mode=display">\cos\theta+i\sin\theta=e^{i\theta}</script><p>$\theta = \omega t$<br>$e^{i \omega t}$为逆时针旋转</p><h1 id="Generalization-and-frequency-perspective"><a href="#Generalization-and-frequency-perspective" class="headerlink" title="Generalization and frequency perspective"></a>Generalization and frequency perspective</h1><h2 id="Fourier-analysis"><a href="#Fourier-analysis" class="headerlink" title="Fourier analysis"></a>Fourier analysis</h2><p>痴迷于热学，认为热包治百病。<br>夏天穿衣服，坐火炉，被热死。</p><h2 id="Fourier-series"><a href="#Fourier-series" class="headerlink" title="Fourier series"></a>Fourier series</h2>]]></content>
     
@@ -35,15 +35,19 @@
     </summary>
     
     
+      <category term="-李永乐老师" scheme="https://asswei7.github.io/categories/%E6%9D%8E%E6%B0%B8%E4%B9%90%E8%80%81%E5%B8%88/"/>
+    
+    
+      <category term="傅里叶级数" scheme="https://asswei7.github.io/tags/%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0/"/>
     
   </entry>
   
   <entry>
-    <title>我的第一篇博客</title>
-    <link href="https://asswei7.github.io/2020/03/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://asswei7.github.io/2020/03/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
+    <title>欧洲历史</title>
+    <link href="https://asswei7.github.io/2020/03/30/%E6%AC%A7%E6%B4%B2%E5%8E%86%E5%8F%B2/"/>
+    <id>https://asswei7.github.io/2020/03/30/%E6%AC%A7%E6%B4%B2%E5%8E%86%E5%8F%B2/</id>
     <published>2020-03-30T03:17:15.000Z</published>
-    <updated>2020-03-30T07:51:06.482Z</updated>
+    <updated>2020-03-31T14:09:01.753Z</updated>
     
     <content type="html"><![CDATA[<h2 id="这是我的第一篇博客"><a href="#这是我的第一篇博客" class="headerlink" title="这是我的第一篇博客"></a>这是我的第一篇博客</h2><p>会记录一下我的内容</p><h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>谢谢您的阅读！</p>]]></content>
     
@@ -58,6 +62,10 @@
     </summary>
     
     
+      <category term="-思维实验室" scheme="https://asswei7.github.io/categories/%E6%80%9D%E7%BB%B4%E5%AE%9E%E9%AA%8C%E5%AE%A4/"/>
+    
+    
+      <category term="历史" scheme="https://asswei7.github.io/tags/%E5%8E%86%E5%8F%B2/"/>
     
   </entry>
   
