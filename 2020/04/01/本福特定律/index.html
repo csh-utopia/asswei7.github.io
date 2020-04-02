@@ -28,7 +28,7 @@
 <meta property="og:description" content="本福特定律 自然的数据，杂乱无章，首位为1的概率为1&#x2F;9？ 1881年纽康，1938年，本福特10进制中，首位为n的概率，P_n &#x3D; log_10{\frac{n+1}{n}}$P_1 &#x3D; lg2 &#x3D; 30.1%$$P_2 &#x3D; lg3&#x2F;2 &#x3D; 17.6%$$P_9 &#x3D; lg10&#x2F;9 &#x3D; 4.6%$ 应用：非人为数据（不能选电话号码）跨度大（不能选择身高体重这种）李永乐老师视频播放量，各个国家GDP">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-01T02:45:16.000Z">
-<meta property="article:modified_time" content="2020-04-02T03:41:25.568Z">
+<meta property="article:modified_time" content="2020-04-02T08:03:49.495Z">
 <meta property="article:author" content="孙书玮">
 <meta name="twitter:card" content="summary">
 
@@ -197,7 +197,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-02 11:41:25" itemprop="dateModified" datetime="2020-04-02T11:41:25+08:00">2020-04-02</time>
+                <time title="Modified: 2020-04-02 16:03:49" itemprop="dateModified" datetime="2020-04-02T16:03:49+08:00">2020-04-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -425,6 +425,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
