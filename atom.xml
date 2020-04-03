@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://asswei7.github.io/"/>
-  <updated>2020-04-03T07:30:30.800Z</updated>
+  <updated>2020-04-03T07:55:49.559Z</updated>
   <id>https://asswei7.github.io/</id>
   
   <author>
@@ -21,13 +21,23 @@
     <link href="https://asswei7.github.io/2020/04/03/XuZhiQin/"/>
     <id>https://asswei7.github.io/2020/04/03/XuZhiQin/</id>
     <published>2020-04-03T07:30:30.000Z</published>
-    <updated>2020-04-03T07:30:30.800Z</updated>
+    <updated>2020-04-03T07:55:49.559Z</updated>
+    
+    <content type="html"><![CDATA[<p>Statics: Model-based<br>ML: Model-freed</p><h3 id="Statics-View"><a href="#Statics-View" class="headerlink" title="Statics View"></a>Statics View</h3><script type="math/tex; mode=display">f_\theta(x)=ax+b</script><script type="math/tex; mode=display">\hat{\beta}=(X^TX)^{-1}X^TY</script><p>最小二乘因子</p><ol><li>高斯-马尔科夫定理<br>$X \in R^{n \times d}$,  $Y \in R^{n \times 1}$</li></ol>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;Statics: Model-based&lt;br&gt;ML: Model-freed&lt;/p&gt;
+&lt;h3 id=&quot;Statics-View&quot;&gt;&lt;a href=&quot;#Statics-View&quot; class=&quot;headerlink&quot; title=&quot;Statics View&quot;&gt;&lt;/a&gt;Sta
+      
     
     </summary>
     
     
+    
+      <category term="机器学习" scheme="https://asswei7.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
