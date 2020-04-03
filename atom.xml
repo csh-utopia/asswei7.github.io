@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://asswei7.github.io/"/>
-  <updated>2020-04-03T07:55:49.559Z</updated>
+  <updated>2020-04-03T08:10:58.631Z</updated>
   <id>https://asswei7.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://asswei7.github.io/2020/04/03/XuZhiQin/"/>
     <id>https://asswei7.github.io/2020/04/03/XuZhiQin/</id>
     <published>2020-04-03T07:30:30.000Z</published>
-    <updated>2020-04-03T07:55:49.559Z</updated>
+    <updated>2020-04-03T08:10:58.631Z</updated>
     
-    <content type="html"><![CDATA[<p>Statics: Model-based<br>ML: Model-freed</p><h3 id="Statics-View"><a href="#Statics-View" class="headerlink" title="Statics View"></a>Statics View</h3><script type="math/tex; mode=display">f_\theta(x)=ax+b</script><script type="math/tex; mode=display">\hat{\beta}=(X^TX)^{-1}X^TY</script><p>最小二乘因子</p><ol><li>高斯-马尔科夫定理<br>$X \in R^{n \times d}$,  $Y \in R^{n \times 1}$</li></ol>]]></content>
+    <content type="html"><![CDATA[<p>Statics: Model-based<br>ML: Model-freed</p><h3 id="Statics-View"><a href="#Statics-View" class="headerlink" title="Statics View"></a>Statics View</h3><script type="math/tex; mode=display">f_\theta(x)=ax+b</script><script type="math/tex; mode=display">\hat{\beta}=(X^TX)^{-1}X^TY</script><p>最小二乘因子</p><ol><li>高斯-马尔科夫定理<br>$X \in R^{n \times d}$,  $Y \in R^{n \times 1}$</li></ol><h3 id="何时用统计"><a href="#何时用统计" class="headerlink" title="何时用统计"></a>何时用统计</h3><ol><li>预测X与Y的一种关系</li><li>具体知道参数满足的不同的分布规律。</li></ol><h3 id="ML-Views"><a href="#ML-Views" class="headerlink" title="ML Views"></a>ML Views</h3><p>当数据量很大时，不能通过这个方法来计算得到$\hat{\beta}$:</p><script type="math/tex; mode=display">\hat{\beta}=(X^TX)^{-1}X^TY</script><p>不需要模型，只有一个目标去学习参数。</p><script type="math/tex; mode=display">L_n = \frac{1}{n} \sum_{i=1}^n (ax_i+b-y_i)^2</script><p>利用梯度下降。<br>$h_i=ax_i+b$</p><script type="math/tex; mode=display">\frac{\partial L_n}{\partial a} = \frac{1}{n}\sum_{i=1}^n(h_i-y_i) \frac{\partial h_i}{\partial a} =\frac{1}{n}\sum_{i=1}^n(h_i-y_i)x_i</script><p>Gradient Desent</p><script type="math/tex; mode=display">a^{t+1} = a^t - \eta \frac{\partial L_n}{\partial a}</script><script type="math/tex; mode=display">b^{t+1} = b^t - \eta \frac{\partial L_n}{\partial b}</script>]]></content>
     
     <summary type="html">
     

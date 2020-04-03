@@ -190,7 +190,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-04-03 15:30:30 / Modified: 15:55:49" itemprop="dateCreated datePublished" datetime="2020-04-03T15:30:30+08:00">2020-04-03</time>
+              <time title="Created: 2020-04-03 15:30:30 / Modified: 16:10:58" itemprop="dateCreated datePublished" datetime="2020-04-03T15:30:30+08:00">2020-04-03</time>
             </span>
 
           
@@ -206,7 +206,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>139</span>
+              <span>549</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -230,7 +230,16 @@
 <ol>
 <li>高斯-马尔科夫定理<br>$X \in R^{n \times d}$,  $Y \in R^{n \times 1}$</li>
 </ol>
-
+<h3 id="何时用统计"><a href="#何时用统计" class="headerlink" title="何时用统计"></a>何时用统计</h3><ol>
+<li>预测X与Y的一种关系</li>
+<li>具体知道参数满足的不同的分布规律。</li>
+</ol>
+<h3 id="ML-Views"><a href="#ML-Views" class="headerlink" title="ML Views"></a>ML Views</h3><p>当数据量很大时，不能通过这个方法来计算得到$\hat{\beta}$:</p>
+<script type="math/tex; mode=display">\hat{\beta}=(X^TX)^{-1}X^TY</script><p>不需要模型，只有一个目标去学习参数。</p>
+<script type="math/tex; mode=display">L_n = \frac{1}{n} \sum_{i=1}^n (ax_i+b-y_i)^2</script><p>利用梯度下降。<br>$h_i=ax_i+b$</p>
+<script type="math/tex; mode=display">\frac{\partial L_n}{\partial a} = \frac{1}{n}\sum_{i=1}^n(h_i-y_i) \frac{\partial h_i}{\partial a}
+ =\frac{1}{n}\sum_{i=1}^n(h_i-y_i)x_i</script><p>Gradient Desent</p>
+<script type="math/tex; mode=display">a^{t+1} = a^t - \eta \frac{\partial L_n}{\partial a}</script><script type="math/tex; mode=display">b^{t+1} = b^t - \eta \frac{\partial L_n}{\partial b}</script>
       
     </div>
 
@@ -906,7 +915,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4 mins.</span>
+    <span title="Reading time total">5 mins.</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
   </div>
