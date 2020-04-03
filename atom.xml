@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://asswei7.github.io/"/>
-  <updated>2020-04-03T08:10:58.631Z</updated>
+  <updated>2020-04-03T08:28:49.507Z</updated>
   <id>https://asswei7.github.io/</id>
   
   <author>
@@ -21,16 +21,15 @@
     <link href="https://asswei7.github.io/2020/04/03/XuZhiQin/"/>
     <id>https://asswei7.github.io/2020/04/03/XuZhiQin/</id>
     <published>2020-04-03T07:30:30.000Z</published>
-    <updated>2020-04-03T08:10:58.631Z</updated>
+    <updated>2020-04-03T08:28:49.507Z</updated>
     
-    <content type="html"><![CDATA[<p>Statics: Model-based<br>ML: Model-freed</p><h3 id="Statics-View"><a href="#Statics-View" class="headerlink" title="Statics View"></a>Statics View</h3><script type="math/tex; mode=display">f_\theta(x)=ax+b</script><script type="math/tex; mode=display">\hat{\beta}=(X^TX)^{-1}X^TY</script><p>最小二乘因子</p><ol><li>高斯-马尔科夫定理<br>$X \in R^{n \times d}$,  $Y \in R^{n \times 1}$</li></ol><h3 id="何时用统计"><a href="#何时用统计" class="headerlink" title="何时用统计"></a>何时用统计</h3><ol><li>预测X与Y的一种关系</li><li>具体知道参数满足的不同的分布规律。</li></ol><h3 id="ML-Views"><a href="#ML-Views" class="headerlink" title="ML Views"></a>ML Views</h3><p>当数据量很大时，不能通过这个方法来计算得到$\hat{\beta}$:</p><script type="math/tex; mode=display">\hat{\beta}=(X^TX)^{-1}X^TY</script><p>不需要模型，只有一个目标去学习参数。</p><script type="math/tex; mode=display">L_n = \frac{1}{n} \sum_{i=1}^n (ax_i+b-y_i)^2</script><p>利用梯度下降。<br>$h_i=ax_i+b$</p><script type="math/tex; mode=display">\frac{\partial L_n}{\partial a} = \frac{1}{n}\sum_{i=1}^n(h_i-y_i) \frac{\partial h_i}{\partial a} =\frac{1}{n}\sum_{i=1}^n(h_i-y_i)x_i</script><p>Gradient Desent</p><script type="math/tex; mode=display">a^{t+1} = a^t - \eta \frac{\partial L_n}{\partial a}</script><script type="math/tex; mode=display">b^{t+1} = b^t - \eta \frac{\partial L_n}{\partial b}</script>]]></content>
+    <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Statics: Model-based<br>ML: Model-freed</p><h3 id="Statics-View"><a href="#Statics-View" class="headerlink" title="Statics View"></a>Statics View</h3><script type="math/tex; mode=display">f_\theta(x)=ax+b</script><script type="math/tex; mode=display">\hat{\beta}=(X^TX)^{-1}X^TY</script><p>最小二乘因子</p><ol><li>高斯-马尔科夫定理<br>$X \in R^{n \times d}$,  $Y \in R^{n \times 1}$</li></ol><h3 id="何时用统计"><a href="#何时用统计" class="headerlink" title="何时用统计"></a>何时用统计</h3><ol><li>预测X与Y的一种关系</li><li>具体知道参数满足的不同的分布规律。</li></ol><h3 id="ML-Views"><a href="#ML-Views" class="headerlink" title="ML Views"></a>ML Views</h3><p>当数据量很大时，不能通过这个方法来计算得到$\hat{\beta}$:</p><script type="math/tex; mode=display">\hat{\beta}=(X^TX)^{-1}X^TY</script><p>不需要模型，只有一个目标去学习参数。</p><script type="math/tex; mode=display">L_n = \frac{1}{n} \sum_{i=1}^n (ax_i+b-y_i)^2</script><p>利用梯度下降。<br>$h_i=ax_i+b$</p><script type="math/tex; mode=display">\frac{\partial L_n}{\partial a} = \frac{1}{n}\sum_{i=1}^n(h_i-y_i) \frac{\partial h_i}{\partial a} =\frac{1}{n}\sum_{i=1}^n(h_i-y_i)x_i</script><p>Gradient Desent</p><script type="math/tex; mode=display">a^{t+1} = a^t - \eta \frac{\partial L_n}{\partial a}</script><script type="math/tex; mode=display">b^{t+1} = b^t - \eta \frac{\partial L_n}{\partial b}</script><h1 id="Basic-Concepts"><a href="#Basic-Concepts" class="headerlink" title="Basic Concepts"></a>Basic Concepts</h1><ol><li>Supervised learning: learning with labels</li><li>Unsupervised learning: wio labels(聚类)</li><li>Reinforcement learning: learn to make optimal decision<h3 id="Loss-Funtion"><a href="#Loss-Funtion" class="headerlink" title="Loss Funtion"></a>Loss Funtion</h3>Empirical Risk Minimization(ERM)即为training loss</li></ol><h3 id="Two-layer-Neural-Network"><a href="#Two-layer-Neural-Network" class="headerlink" title="Two-layer Neural Network"></a>Two-layer Neural Network</h3><script type="math/tex; mode=display">f_\theta(x) = \sum_{j=1}^m a_j\sigma(\omega_jx+b_j)</script><p>input_layer(not counted) hidden_layer output_layer<br><em>n</em> refers to nums of <em>Samples</em><br><em>m</em> refers to nums of <em>Neurals</em><br><em>为了增强模型的表达性，激活函数不能采用线性的，要使用非线性的</em><br>1989年证明一个隐藏层可以逼近任何一个函数。</p><h3 id="General-Deep-Neural-Network"><a href="#General-Deep-Neural-Network" class="headerlink" title="General Deep Neural Network"></a>General Deep Neural Network</h3><script type="math/tex; mode=display">f_\theta(x) =  \cdots\cdots w^{[1]}\sigma(w^{[0]}x+b^{[0]})+b^{[1]}</script>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Statics: Model-based&lt;br&gt;ML: Model-freed&lt;/p&gt;
-&lt;h3 id=&quot;Statics-View&quot;&gt;&lt;a href=&quot;#Statics-View&quot; class=&quot;headerlink&quot; title=&quot;Statics View&quot;&gt;&lt;/a&gt;Sta
+        &lt;h1 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h1&gt;&lt;p&gt;Statics: Model-based&lt;br&gt;ML: Mo
       
     
     </summary>
