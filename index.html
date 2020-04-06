@@ -371,10 +371,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-04-03 15:30:30 / Modified: 17:58:37" itemprop="dateCreated datePublished" datetime="2020-04-03T15:30:30+08:00">2020-04-03</time>
+              <time title="Created: 2020-04-03 15:30:30" itemprop="dateCreated datePublished" datetime="2020-04-03T15:30:30+08:00">2020-04-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-05 15:36:11" itemprop="dateModified" datetime="2020-04-05T15:36:11+08:00">2020-04-05</time>
+              </span>
 
           
             <span id="/2020/04/03/XuZhiQin/" class="post-meta-item leancloud_visitors" data-flag-title="XuZhiQin" title="Views">
@@ -389,7 +395,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.3k</span>
+              <span>1.4k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -431,6 +437,9 @@
 <h3 id="General-Deep-Neural-Network"><a href="#General-Deep-Neural-Network" class="headerlink" title="General Deep Neural Network"></a>General Deep Neural Network</h3><script type="math/tex; mode=display">f_\theta(x) =  w^{[L-1]}\sigma( \cdots w^{[1]}\sigma(w^{[0]}x+b^{[0]})+b^{[1]}\cdot)+b^[L-1]</script><p>对于每一层节点：</p>
 <script type="math/tex; mode=display">f_\theta^{[0]}(x) = x</script><script type="math/tex; mode=display">f_\theta^{[1]}(x) = \sigma(w^{[0]}x+b^{[0]})</script><script type="math/tex; mode=display">f_\theta^{[L]}(x) = \sigma(w^{[L-1]}f_\theta^{[L-1]}(x)+b^{[L-1]})</script><p>对于最后一层的输出：</p>
 <script type="math/tex; mode=display">f_\theta(x) = f^{[L]}(x) = w^{[L-1]}f^{[L-1]}(x)+b^{[L-1]}</script><p>Training：SGD(Stochastic)<br>只使用一个batch数据进行训练</p>
+<h3 id="Error-Analysis"><a href="#Error-Analysis" class="headerlink" title="Error Analysis"></a>Error Analysis</h3><ol>
+<li>Approxicimation Error<br> consider no cost</li>
+</ol>
 
       
     </div>
@@ -717,7 +726,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-31 22:08:49" itemprop="dateModified" datetime="2020-03-31T22:08:49+08:00">2020-03-31</time>
+                <time title="Modified: 2020-04-05 15:46:15" itemprop="dateModified" datetime="2020-04-05T15:46:15+08:00">2020-04-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -742,7 +751,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>466</span>
+              <span>825</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -765,9 +774,18 @@
 <script type="math/tex; mode=display">e_i \cdot e_i = 1</script><script type="math/tex; mode=display">e_i \cdot e_j = 0</script><h2 id="傅里叶级数（周期性函数）"><a href="#傅里叶级数（周期性函数）" class="headerlink" title="傅里叶级数（周期性函数）"></a>傅里叶级数（周期性函数）</h2><p>周期性函数f(t)=正(余)弦 函数之和<br>把不同的函数当成不同的基函数<br>获得不同的信号的 <em>频率</em>、<em>振幅</em>、<em>相位</em></p>
 <script type="math/tex; mode=display">f(t) = \frac{a_0}{2}+\sum a_n\sin(n\omega t+\varphi_n)</script><script type="math/tex; mode=display">f(t) = \frac{a_0}{2}+\sum a_n\sin(n\omega t) +\sum b_n\cos(n\omega t)</script><p>将正弦看作一个正交基，余弦看作一个正交基，常数项看作一个正交基，是三个正交基的线性组合。</p>
 <h2 id="傅里叶变换（针对非周期函数）"><a href="#傅里叶变换（针对非周期函数）" class="headerlink" title="傅里叶变换（针对非周期函数）"></a>傅里叶变换（针对非周期函数）</h2><p>想象一个二维 直角坐标系，横轴是1，纵轴是i</p>
-<script type="math/tex; mode=display">\cos\theta+i\sin\theta=e^{i\theta}</script><p>$\theta = \omega t$<br>$e^{i \omega t}$为逆时针旋转</p>
-<h1 id="Generalization-and-frequency-perspective"><a href="#Generalization-and-frequency-perspective" class="headerlink" title="Generalization and frequency perspective"></a>Generalization and frequency perspective</h1><h2 id="Fourier-analysis"><a href="#Fourier-analysis" class="headerlink" title="Fourier analysis"></a>Fourier analysis</h2><p>痴迷于热学，认为热包治百病。<br>夏天穿衣服，坐火炉，被热死。</p>
-<h2 id="Fourier-series"><a href="#Fourier-series" class="headerlink" title="Fourier series"></a>Fourier series</h2>
+<script type="math/tex; mode=display">\cos\theta+i\sin\theta=e^{i\theta}</script><p>$\theta = wt$<br>$e^{iwt}$为逆时针旋转<br>将一个非周期的信号</p>
+<script type="math/tex; mode=display">F_T = \int_{-\infty}^{+infty}f(t)e^{-jwt}dt = 0 或者非0</script><p>得到一个复数，实数代表相应频率的强度，虚数代表相位。</p>
+<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><ol>
+<li>声音：大脑可以进行傅里叶变换，得到不同频率的强度，低频强度高的是男声，高的是女生。<br>人脑还能滤波，只听一个人的声音。</li>
+<li>图像：对人脸傅里叶变换，低频成分表示轮廓，高频表示细节部分。过滤到细节，可以去除斑点皱纹。</li>
+</ol>
+<h1 id="Generalization-and-frequency-perspective"><a href="#Generalization-and-frequency-perspective" class="headerlink" title="Generalization and frequency perspective"></a>Generalization and frequency perspective</h1><h3 id="Fourier-analysis"><a href="#Fourier-analysis" class="headerlink" title="Fourier analysis"></a>Fourier analysis</h3><p>痴迷于热学，认为热包治百病。<br>夏天穿衣服，坐火炉，被热死。<br>将一个函数看作各种正弦、余弦周期函数的带各自系数的线性组合。(把正余弦函数看成一组基)<br>为什么投影到三角级数？</p>
+<h3 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h3><script type="math/tex; mode=display">\mathscr{F}[g(x)](\xi) = \int_{-\infty}^{+infty}g(x)e^{-i2\pi\xix}dx</script><ol>
+<li>基函数是$e^{-i2\pi\xi x}$</li>
+<li><script type="math/tex; mode=display">e^{-i2\pi\xi x} = cos(-i2\pi\xix) + isin(i2\pi\xix)</script></li>
+</ol>
+
       
     </div>
 
@@ -1107,7 +1125,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6 mins.</span>
+    <span title="Reading time total">7 mins.</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
   </div>
